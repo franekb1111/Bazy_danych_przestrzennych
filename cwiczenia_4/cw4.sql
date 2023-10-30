@@ -62,7 +62,7 @@ WHERE kpt.type = 'Sporting Goods Store';
 
 --zad 8.
 CREATE TABLE T2019_KAR_BRIDGES AS
-SELECT ST_Intersection(kr.geom, kwl.geom) AS inters
+SELECT DISTINCT ST_Intersection(kr.geom, kwl.geom) AS inters
 FROM t2019_kar_water_lines AS kwl, t2019_kar_railways AS kr;
 
 
